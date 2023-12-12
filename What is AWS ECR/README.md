@@ -14,14 +14,19 @@ In this video, we will deep dive into the fundamental concepts of ECR and provid
 6. Cleaning Up Resources
 
 ## 1. What is AWS ECR?
-AWS Elastic Container Registry (ECR) is a fully managed container image registry service provided by Amazon Web Services (AWS). It enables you to store, manage, and deploy container images (Docker images) securely, making it an essential component of your containerized application development workflow. ECR integrates seamlessly with other AWS services like Amazon Elastic Container Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
+AWS Elastic Container Registry (ECR) is a fully managed container image registry service provided by Amazon Web Services (AWS). 
+It enables you to store, manage, and deploy container images (Docker images) securely, making it an essential component of your 
+containerized application development workflow. ECR integrates seamlessly with other AWS services like Amazon Elastic Container 
+Service (ECS) and Amazon Elastic Kubernetes Service (EKS).
 
 ## 2. Key Benefits of ECR
-- **Security**: ECR offers encryption at rest, and images are stored in private repositories by default, ensuring the security of your container images.
+- **Security**: ECR offers encryption at rest, and images are stored in private repositories by default, ensuring the security
+- of your container images.
 - **Integration**: ECR integrates smoothly with AWS services like ECS and EKS, simplifying the deployment process.
 - **Scalability**: As a managed service, ECR automatically scales to meet the demands of your container image storage.
 - **Availability**: ECR guarantees high availability, reducing the risk of image unavailability during critical times.
-- **Lifecycle Policies**: You can define lifecycle policies to automate the cleanup of unused or old container images, helping you save on storage costs.
+- **Lifecycle Policies**: You can define lifecycle policies to automate the cleanup of unused or old container images, helping
+- you save on storage costs.
 
 ## 3. Getting Started with AWS ECR
 ### Creating an ECR Repository
@@ -30,7 +35,8 @@ AWS Elastic Container Registry (ECR) is a fully managed container image registry
 3. Enter a unique name for your repository and click "Create repository."
 
 ### Installing AWS CLI
-To interact with ECR from your local machine, you'll need to have the AWS Command Line Interface (CLI) installed. Follow the instructions in the [AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) to install it.
+To interact with ECR from your local machine, you'll need to have the AWS Command Line Interface (CLI) installed. 
+Follow the instructions in the [AWS CLI User Guide](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html) to install it.
 
 ### Configuring AWS CLI
 After installing the AWS CLI, open a terminal and run the following command to configure your CLI with your AWS credentials:

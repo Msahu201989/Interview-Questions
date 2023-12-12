@@ -30,7 +30,9 @@ This blog post aims to be your ultimate guide to AWS ECS. We'll start from the f
 
 ## 1. What is AWS ECS?
 
-AWS ECS is a fully managed container orchestration service that allows you to run Docker containers at scale. It eliminates the need to manage your own container orchestration infrastructure and provides a highly scalable, reliable, and secure environment for deploying and managing your applications.
+AWS ECS is a fully managed container orchestration service that allows you to run Docker containers at scale. It eliminates the need to
+manage your own container orchestration infrastructure and provides a highly scalable, reliable, and secure environment for 
+deploying and managing your applications.
 
 ## 2. Why Choose ECS Over Other Container Orchestration Tools?
 
