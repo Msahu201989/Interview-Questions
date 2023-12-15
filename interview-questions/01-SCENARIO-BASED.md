@@ -1,20 +1,33 @@
-### 1. **Scenario:** You have a microservices application that needs to scale dynamically based on traffic. How would you design an architecture for this using AWS services?
-**Answer:** I would use Amazon ECS or Amazon EKS for container orchestration, coupled with AWS Auto Scaling to adjust the number of instances based on CPU or custom metrics. Application Load Balancers can distribute traffic, and Amazon CloudWatch can monitor and trigger scaling events.
+### 1. **Scenario:** You have a microservices application that needs to scale dynamically based on traffic. 
+How would you design an architecture for this using AWS services?
+**Answer:** I would use Amazon ECS or Amazon EKS for container orchestration, 
+coupled with AWS Auto Scaling to adjust the number of instances based on CPU or custom metrics. 
+Application Load Balancers can distribute traffic, and Amazon CloudWatch can monitor and trigger scaling events.
 
-### 2. **Scenario:** Your application's database is experiencing performance issues. Describe how you would use AWS tools to troubleshoot and resolve this.
-**Answer:** I would use Amazon RDS Performance Insights to identify bottlenecks, CloudWatch Metrics for monitoring, and AWS X-Ray for tracing requests. I'd also consider optimizing queries and using read replicas if necessary.
+### 2. **Scenario:** Your application's database is experiencing performance issues.
+Describe how you would use AWS tools to troubleshoot and resolve this.
+**Answer:** I would use Amazon RDS Performance Insights to identify bottlenecks, CloudWatch Metrics for monitoring,
+and AWS X-Ray for tracing requests. I'd also consider optimizing queries and using read replicas if necessary.
 
-### 3. **Scenario:** You're migrating a monolithic application to a microservices architecture. How would you ensure smooth deployment and minimize downtime?
-**Answer:** I would adopt a "strangler" pattern, gradually migrating components to microservices. This minimizes risk by replacing pieces of the monolith over time, allowing for testing and validation at each step.
+### 3. **Scenario:** You're migrating a monolithic application to a microservices architecture. 
+How would you ensure smooth deployment and minimize downtime?
+**Answer:** I would adopt a "strangler" pattern, gradually migrating components to microservices. This minimizes risk by 
+replacing pieces of the monolith over time, allowing for testing and validation at each step.
 
-### 4. **Scenario:** Your team is frequently encountering configuration drift issues in your infrastructure. How could you prevent and manage this effectively?
-**Answer:** I would implement Infrastructure as Code (IaC) using AWS CloudFormation or Terraform. By versioning and automating infrastructure changes, we can ensure consistent and repeatable deployments.
+### 4. **Scenario:** Your team is frequently encountering configuration drift issues in your infrastructure.
+How could you prevent and manage this effectively?
+**Answer:** I would implement Infrastructure as Code (IaC) using AWS CloudFormation or Terraform. 
+By versioning and automating infrastructure changes, we can ensure consistent and repeatable deployments.
 
-### 5. **Scenario:** Your company is launching a new product, and you expect a sudden spike in traffic. How would you ensure the application remains responsive and available?
-**Answer:** I would implement a combination of auto-scaling groups, Amazon CloudFront for content delivery, Amazon RDS read replicas, and Amazon DynamoDB provisioned capacity to handle increased load while maintaining performance.
+### 5. **Scenario:** Your company is launching a new product, and you expect a sudden spike in traffic. 
+How would you ensure the application remains responsive and available?
+**Answer:** I would implement a combination of auto-scaling groups, Amazon CloudFront for content delivery, 
+Amazon RDS read replicas, and Amazon DynamoDB provisioned capacity to handle increased load while maintaining performance.
 
-### 6. **Scenario:** You're working on a CI/CD pipeline for a containerized application. How could you ensure that every code change is automatically tested and deployed?
-**Answer:** I would set up an AWS CodePipeline that integrates with AWS CodeBuild for building and testing containers. After successful testing, I'd use AWS CodeDeploy to deploy the containers to an ECS cluster or Kubernetes on EKS.
+### 6. **Scenario:** You're working on a CI/CD pipeline for a containerized application.
+How could you ensure that every code change is automatically tested and deployed?
+**Answer:** I would set up an AWS CodePipeline that integrates with AWS CodeBuild for building and testing containers. 
+After successful testing, I'd use AWS CodeDeploy to deploy the containers to an ECS cluster or Kubernetes on EKS.
 
 ### 7. **Scenario:** Your team wants to ensure secure access to AWS resources for different team members. How could you implement this?
 **Answer:** I would use AWS Identity and Access Management (IAM) to create fine-grained policies for each team member. IAM roles and groups can be assigned permissions based on least privilege principles.
